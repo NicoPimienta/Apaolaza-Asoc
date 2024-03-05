@@ -14,6 +14,22 @@
 
       $('.projects-thumb-large').css('height', LargeImage + 'px');
     }
+    // funciónes para que seleccione reserva virtual al form:
+
+    $(document).ready(function(){
+      $('#resvirtual').click(function(){
+          $('#tipo_de_entrevista').val('virtual');
+      });
+  });
+
+
+  $(document).ready(function(){
+    $('#respresen').click(function(){
+        $('#tipo_de_entrevista').val('presencial');
+    });
+});
+// ---------------
+
 
     $(window).on("resize", NewsImageResize);
     $(document).on("ready", NewsImageResize);
