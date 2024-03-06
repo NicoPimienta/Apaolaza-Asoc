@@ -896,7 +896,7 @@ strong {
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
   .mobile-logo {
-      height: 145px; /* Ajusta el tamaño según tus necesidades */
+      height: 100px; /* Ajusta el tamaño según tus necesidades */
   }
 }
 

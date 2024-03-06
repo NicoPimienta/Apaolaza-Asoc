@@ -32,18 +32,15 @@
 //funciones para que redirija al modal SOLO EN MOVIL
 
 
-
-
-
 $(document).ready(function(){
   // Función para crear el enlace de anclaje en dispositivos móviles
-  function createAnchorLink(tabId, contentId) {
+  function createAnchorLink() {
       // Verificar si es un dispositivo móvil (ancho de pantalla menor a 768px)
       if ($(window).width() < 768) {
           // Obtener la posición del elemento de contenido
-          var contentPosition = $(contentId).offset().top;
+          var contentPosition = $('#nav-business').offset().top;
           // Agregar el enlace de anclaje al botón
-          $(tabId).click(function() {
+          $('#nav-business-tab').click(function() {
               $('html, body').animate({
                   scrollTop: contentPosition
               }, 'slow');
@@ -51,11 +48,61 @@ $(document).ready(function(){
       }
   }
 
-  // Llamar a la función para cada botón
-  createAnchorLink('#nav-strategy-tab', '#nav-strategy');
-  createAnchorLink('#nav-video-tab', '#nav-video');
-  createAnchorLink('#nav-consum-tab', '#nav-consum');
+
+
+  
+
+  // Llamar a la función para crear el enlace de anclaje
+  createAnchorLink();
 });
+
+$(document).ready(function(){
+  // Función para crear el enlace de anclaje para el botón 'nav-strategy-tab'
+  function createStrategyAnchorLink() {
+      if ($(window).width() < 768) {
+          var contentPosition = $('#nav-strategy').offset().top;
+          $('#nav-strategy-tab').click(function() {
+              $('html, body').animate({
+                  scrollTop: contentPosition
+              }, 'slow');
+          });
+      }
+  }
+
+  // Función para crear el enlace de anclaje para el botón 'nav-video-tab'
+  function createVideoAnchorLink() {
+      if ($(window).width() < 768) {
+          var contentPosition = $('#nav-video').offset().top;
+          $('#nav-video-tab').click(function() {
+              $('html, body').animate({
+                  scrollTop: contentPosition
+              }, 'slow');
+          });
+      }
+  }
+
+  // Función para crear el enlace de anclaje para el botón 'nav-consum-tab'
+  function createConsumAnchorLink() {
+      if ($(window).width() < 768) {
+          var contentPosition = $('#nav-consum').offset().top;
+          $('#nav-consum-tab').click(function() {
+              $('html, body').animate({
+                  scrollTop: contentPosition
+              }, 'slow');
+          });
+      }
+  }
+
+  // Llamar a las funciones para crear los enlaces de anclaje
+  createStrategyAnchorLink();
+  createVideoAnchorLink();
+  createConsumAnchorLink();
+});
+
+
+
+
+
 
 
 
