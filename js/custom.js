@@ -32,72 +32,7 @@
 //funciones para que redirija al modal SOLO EN MOVIL
 
 
-$(document).ready(function(){
-  // Función para crear el enlace de anclaje en dispositivos móviles
-  function createAnchorLink() {
-      // Verificar si es un dispositivo móvil (ancho de pantalla menor a 768px)
-      if ($(window).width() < 768) {
-          // Obtener la posición del elemento de contenido
-          var contentPosition = $('#nav-business').offset().top;
-          // Agregar el enlace de anclaje al botón
-          $('#nav-business-tab').click(function() {
-              $('html, body').animate({
-                  scrollTop: contentPosition
-              }, 'slow');
-          });
-      }
-  }
 
-
-
-  
-
-  // Llamar a la función para crear el enlace de anclaje
-  createAnchorLink();
-});
-
-$(document).ready(function(){
-  // Función para crear el enlace de anclaje para el botón 'nav-strategy-tab'
-  function createStrategyAnchorLink() {
-      if ($(window).width() < 768) {
-          var contentPosition = $('#nav-strategy').offset().top;
-          $('#nav-strategy-tab').click(function() {
-              $('html, body').animate({
-                  scrollTop: contentPosition
-              }, 'slow');
-          });
-      }
-  }
-
-  // Función para crear el enlace de anclaje para el botón 'nav-video-tab'
-  function createVideoAnchorLink() {
-      if ($(window).width() < 768) {
-          var contentPosition = $('#nav-video').offset().top;
-          $('#nav-video-tab').click(function() {
-              $('html, body').animate({
-                  scrollTop: contentPosition
-              }, 'slow');
-          });
-      }
-  }
-
-  // Función para crear el enlace de anclaje para el botón 'nav-consum-tab'
-  function createConsumAnchorLink() {
-      if ($(window).width() < 768) {
-          var contentPosition = $('#nav-consum').offset().top;
-          $('#nav-consum-tab').click(function() {
-              $('html, body').animate({
-                  scrollTop: contentPosition
-              }, 'slow');
-          });
-      }
-  }
-
-  // Llamar a las funciones para crear los enlaces de anclaje
-  createStrategyAnchorLink();
-  createVideoAnchorLink();
-  createConsumAnchorLink();
-});
 
 
 
