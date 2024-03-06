@@ -14,7 +14,7 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -36,8 +36,8 @@
                 <div class="row align-items-center subtitulos-fuente">
 
                     <div class="col-lg-3 col-md-3 col-4">
-                        <p class="text-white mb-0">
-                            <i class="bi-clock site-header-icon me-2"></i>
+                        <p class="text-white mb-0 text-wrap">
+                            <i class="bi-clock site-header-icon me-2 "></i>
                             Mon-Fri 10:00-19:00
                         </p>
                     </div>
@@ -45,7 +45,7 @@
                     <div class="col-lg-3 col-md-3 col-4">
                         <p class="text-white mb-0">
                             <a href="tel: 02324-553786" class="text-white ">
-                                <i class="bi-phone site-header-icon me-2"></i>
+                                <i class="bi-phone site-header-icon me-2 " ></i>
                                 02324-553786 (Mercedes)
                             </a>
                         </p>
@@ -61,7 +61,7 @@
 
                     <div class="col-lg-2 col-md-3 col-6">
                         <p class="text-white mb-0">
-                            <a href="mailto:info@estudio-apaolaza.com.ar" class="text-white">
+                            <a href="mailto:info@estudio-apaolaza.com.ar" id="oculto-mov" class="text-white">
                                 <i class="bi-envelope site-header-icon me-2"></i>
                                 Correo electronico
                             </a>
@@ -70,7 +70,7 @@
 
                     <div class="col-lg-1 col-md-3 col-6 ms-auto">
                         <ul class="social-icon">
-                            <li><a href="https://wa.link/gfrfn8" class="social-icon-link bi-whatsapp"></a></li>
+                            <li id="oculto-mov"><a href="https://wa.link/gfrfn8" class="social-icon-link bi-whatsapp"></a></li>
 
                         </ul>
                     </div>
@@ -259,27 +259,27 @@
                         <div class="col-lg-6 col-12">
                             <nav>
                                 <div class="nav nav-tabs flex-column align-items-baseline" id="nav-tab" role="tablist">
-                                    <button onclick="irASeccion('#nav-business')"  class="nav-link active" id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#nav-business" type="button" role="tab" aria-controls="nav-business" aria-selected="true">
-                                        <h3>Derecho laboral</h3>
-
+                                    <button class="nav-link active" id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#nav-business" type="button" role="tab" aria-controls="nav-business" aria-selected="true">
+                                        <a href="#nav-business"><h3>Derecho laboral</h3>
                                         <p class="span-font-family">El derecho laboral aborda los derechos, deberes y responsabilidades en las relaciones laborales. Se enfrentan diversas contingencias como el empleo no registrado y la tercerización.</>
-                                    </button>
+                                    </button></a>
 
-                                    <button class="nav-link" id="nav-strategy-tab" data-bs-toggle="tab" data-bs-target="#nav-strategy" type="button" role="tab" aria-controls="nav-strategy" aria-selected="false">
-                                        <h3>Derecho previsional</h3>
+
+                                    <button  class="nav-link" id="nav-strategy-tab" data-bs-toggle="tab" data-bs-target="#nav-strategy" type="button" role="tab" aria-controls="nav-strategy" aria-selected="false">
+                                        <a href="#nav-strategy"></a><h3>Derecho previsional</h3>
                                         
                                         <p>El derecho previsional se ocupa de las normas relativas a las jubilaciones, pensiones y otros beneficios sociales que otorga el Estado a través de los organismos de la seguridad social en favor de quienes cumplen determinados requisitos.</p>
-                                    </button>
+                                    </button></a>
 
-                                    <button class="nav-link" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#nav-video" type="button" role="tab" aria-controls="nav-video" aria-selected="false">
-                                        <h3>Derecho reparatorio</h3>
+                                    <button  class="nav-link" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#nav-video" type="button" role="tab" aria-controls="nav-video" aria-selected="false">
+                                        <a href="#nav-video"><h3>Derecho reparatorio</h3>
                                         
-                                        <p>Nuestro servicio en derecho reparatorio aborda los daños sufridos injustamente en diversas situaciones, como accidentes de tráfico o laborales. Cuando estos daños cumplen ciertas características, son considerados resarcibles y tienen derecho a una reparación.</p>
+                                        <p>Nuestro servicio en derecho reparatorio aborda los daños sufridos injustamente en diversas situaciones, como accidentes de tráfico o laborales. Cuando estos daños cumplen ciertas características, son considerados resarcibles y tienen derecho a una reparación.</p></a>
                                     </button>
                                     <button class="nav-link" id="nav-consum-tab" data-bs-toggle="tab" data-bs-target="#nav-consum" type="button" role="tab" aria-controls="nav-consum" aria-selected="false">
-                                        <h3>Derecho de consumidores y usuarios</h3>
+                                        <a href="#nav-video"><h3>Derecho de consumidores y usuarios</h3>
                                         
-                                        <p>Nuestra práctica legal se centra en proteger los derechos de los consumidores y usuarios en el mundo moderno. Desde productos de consumo diario hasta servicios públicos regulados por el estado, nos aseguramos de que sus derechos estén salvaguardados. </p>
+                                        <p>Nuestra práctica legal se centra en proteger los derechos de los consumidores y usuarios en el mundo moderno. Desde productos de consumo diario hasta servicios públicos regulados por el estado, nos aseguramos de que sus derechos estén salvaguardados. </p></a>
                                     </button>
                                 </div>
                             </nav>
@@ -434,18 +434,15 @@
                                         </h4>
 
                                         <h5>
-                                            <a href="mailto:info@company.com" class="footer-link">
+                                            <a href="mailto:info@estudio-apaolaza.com.ar" class="footer-link">
                                                 <i class="bi-envelope-fill contact-icon me-2"></i>
-                                                info@company.com
+                                                info@estudio-apaolaza.com.ar 
                                             </a>
                                         </h5>
                                         
-                                        <!-- Copy "embed a map" HTML code from any point on Google Maps -> Share Link  -->
-                                        
-                                        <!--<iframe class="google-map mt-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4063.103580426464!2d-83.0264337484065!3d42.33402597908653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b2cce05ddf4f1%3A0xcc0559eb3fda00c9!2sDetroit%20Riverwalk%2C%20Detroit%2C%20MI!5e1!3m2!1sen!2sus!4v1657814406289!5m2!1sen!2sus" width="100%" height="300" allowfullscreen="" loading="lazy"></iframe> <!-->
+                                       
 
-
-                                            <img class="img-fluid rounded shadow-lg" src="./images/balanza-apao.png" alt="">
+                                            <img class="img-fluid rounded shadow-lg" src="./images/balanza-apao.webp" alt="Apaolaza&asoc">
                                         
                                     </div>
                                 </div>
@@ -485,13 +482,13 @@
 
                 </div>
             </div>
-            <a href="https://wa.me/tunumerodetelefono" target="_blank" class="whatsapp-btn">
+            <a href="https://wa.me/01122433664" target="_blank" class="whatsapp-btn">
                 <i class="bi bi-whatsapp"></i>
               </a>
         </footer>
 
         <!-- JAVASCRIPT FILES -->
-        <script src="js/anchor-links.js"></script>
+        
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.sticky.js"></script>
