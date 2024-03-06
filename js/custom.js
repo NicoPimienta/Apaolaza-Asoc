@@ -33,31 +33,29 @@
 
 
 
-    $(document).ready(function(){
-        // Función para crear el enlace de anclaje en dispositivos móviles
-        function createAnchorLink(tabId, contentId) {
-            // Verificar si es un dispositivo móvil (ancho de pantalla menor a 768px)
-            if ($(window).width() < 768) {
-                // Obtener la posición del elemento de contenido
-                var contentPosition = $(contentId).offset().top;
-                // Agregar el enlace de anclaje al botón
-                $(tabId).click(function() {
-                    $('html, body').animate({
-                        scrollTop: contentPosition
-                    }, 'slow');
-                });
-            }
-        }
-
-        // Llamar a la función para cada elemento
-        createAnchorLink('#nav-business-tab', '#nav-business');
-        createAnchorLink('#nav-strategy-tab', '#nav-strategy');
-        createAnchorLink('#nav-video-tab', '#nav-video');
-        createAnchorLink('#nav-consum-tab', '#nav-consum');
-    });
 
 
+$(document).ready(function(){
+  // Función para crear el enlace de anclaje en dispositivos móviles
+  function createAnchorLink(tabId, contentId) {
+      // Verificar si es un dispositivo móvil (ancho de pantalla menor a 768px)
+      if ($(window).width() < 768) {
+          // Obtener la posición del elemento de contenido
+          var contentPosition = $(contentId).offset().top;
+          // Agregar el enlace de anclaje al botón
+          $(tabId).click(function() {
+              $('html, body').animate({
+                  scrollTop: contentPosition
+              }, 'slow');
+          });
+      }
+  }
 
+  // Llamar a la función para cada botón
+  createAnchorLink('#nav-strategy-tab', '#nav-strategy');
+  createAnchorLink('#nav-video-tab', '#nav-video');
+  createAnchorLink('#nav-consum-tab', '#nav-consum');
+});
 
 
 
