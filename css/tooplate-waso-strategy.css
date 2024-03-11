@@ -234,7 +234,7 @@ strong {
   CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
-    background: var(--secondary-color);
+    background: black;
     border-radius: 100px;
     color: var(--white-color);
     font-size: var(--copyright-text-font-size);
@@ -243,7 +243,7 @@ strong {
 }
 
 .custom-btn:hover {
-    background: var(--primary-color);
+    background: #00464f;
     color: var(--white-color);
 }
 
@@ -839,6 +839,17 @@ strong {
 
 /* CSS ALTERNATIVOS */
 
+
+
+.bg-fondo-panel-1 {
+    background-color: var(--secondary-color);
+}
+
+.bg-fondo-panel-2{
+    background-color: var(--primary-color);
+}
+
+
 .whatsapp-btn {
     position: fixed;
     bottom: 50px;
@@ -865,7 +876,7 @@ strong {
 
 @media only screen and (max-width: 600px) {
     .whatsapp-btn {
-      display: none;
+        display: none;
         width: 80px;
         height: 67px;
         bottom: 10px;
