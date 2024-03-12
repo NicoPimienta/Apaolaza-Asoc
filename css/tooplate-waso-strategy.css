@@ -885,8 +885,8 @@ strong {
 }
 
 .mobile-logo {
-    height: 180px; /* Ajusta el tamaño según tus necesidades */
-    width: auto;
+    height: auto; /* Ajusta el tamaño según tus necesidades */
+    width: 100%;
     max-width: 100%;
 }
 
