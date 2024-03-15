@@ -1,4 +1,6 @@
 // usar este .js para cualquier tipo de programación aparte
+
+
   (function ($) {
   
   "use strict";
@@ -29,7 +31,23 @@
     });
 });
 
-//funciones para que redirija al modal SOLO EN MOVIL
+//funcion para cambio de telefono de header
+
+$(document).ready(function() {
+  var phoneNumbers = ['011-22433664', '02324-553786']; // Array con los números de teléfono
+  var index = 0;
+
+  function changePhoneNumber() {
+      $('#phone-text').fadeOut(500, function() {
+          $(this).text(phoneNumbers[index]).fadeIn(500);
+      });
+
+      index = (index + 1) % phoneNumbers.length;
+  }
+
+  // Llamar a la función para cambiar el número de teléfono cada 8 segundos
+  setInterval(changePhoneNumber, 5000);
+});
 
 
 
