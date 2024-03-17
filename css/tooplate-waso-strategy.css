@@ -251,9 +251,23 @@ strong {
     background: var(--primary-color);
 }
 
+.custom-bg-second {
+    background:  #c88333;
+}
+
+.custom-bg-second:hover{
+    background:#919498;
+    color: #000000;
+}
+
 .custom-bg-primary:hover {
+    /* 
+    Viejo setting:
     background: var(--white-color);
-    color: var(--dark-color);
+    color: var(--dark-color); */
+    background:#919498;
+    color: #000000;
+
 }
 
 /*---------------------------------------
@@ -377,7 +391,8 @@ strong {
 }
 
 .site-header-icon {
-    color: var(--dark-color);
+    color: #c88333;
+    /* el color anterior era --dark-color (var) */
 }
 
 .site-header .social-icon {
@@ -839,16 +854,13 @@ strong {
 
 /* CSS ALTERNATIVOS */
 
-
-
 .bg-fondo-panel-1 {
     background-color: var(--secondary-color);
 }
 
-.bg-fondo-panel-2{
+.bg-fondo-panel-2 {
     background-color: var(--primary-color);
 }
-
 
 .whatsapp-btn {
     position: fixed;
@@ -910,6 +922,14 @@ strong {
     font-family: var(--body-font-subtitulos);
 }
 
+.subtitulos-fuente-contacto{
+    font-family: LoraReg;
+}
+
 .titulos-fuente {
     font-family: var(--body-font-titulos);
+}
+
+.header-color {
+    color: #c88333;
 }
