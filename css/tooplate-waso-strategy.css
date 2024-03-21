@@ -258,11 +258,11 @@ strong {
 }
 
 .custom-bg-second {
-    background:  #c88333;
+    background:  var(--primary-color);
 }
 
 .custom-bg-second:hover{
-    background:#919498;
+    background:#c88333;
     color: #000000;
 }
 
@@ -271,7 +271,7 @@ strong {
     Viejo setting:
     background: var(--white-color);
     color: var(--dark-color); */
-    background:#919498;
+    background:#c88333;
     color: #000000;
 
 }
