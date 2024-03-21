@@ -34,7 +34,7 @@
 //funcion para cambio de telefono de header
 
 $(document).ready(function() {
-  var phoneNumbers = ['011-22433664', '02324-553786']; // Array con los números de teléfono
+  var phoneNumbers = ['011-22433664 (CABA)', '02324-553786 (Mercedes)', '2396-583294 (Pehuajo)']; // Array con los números de teléfono
   var index = 0;
 
   function changePhoneNumber() {

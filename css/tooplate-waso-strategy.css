@@ -22,6 +22,11 @@ Free Bootstrap 5 HTML Template
     src: url(../fonts/Lora-Regular.ttf);
 }
 
+@font-face {
+    font-family: LoraItal;
+    src: url(../fonts/Lora-BoldItalic.ttf);
+}
+
 :root {
     --white-color: #ffffff;
     --primary-color: rgb(6, 87, 112);
@@ -32,6 +37,7 @@ Free Bootstrap 5 HTML Template
 
     --body-font-titulos: GlacialReg;
     --body-font-subtitulos: LoraReg;
+    --body-font-italic: LoraItal;
 
     --h1-font-size: 60px;
     --h2-font-size: 42px;
@@ -515,12 +521,12 @@ strong {
 }
 
 .about-image-info {
-    background: linear-gradient(to top, var(--dark-color), transparent 90%);
+    background: linear-gradient(to top, var(--dark-color), transparent 100%);
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
-    padding: 40px;
+    padding: 5%;
 }
 
 .about-image {
@@ -840,7 +846,7 @@ strong {
     }
 
     .contact-info {
-        padding: 30px 25px;
+        padding: 30px 3%;
     }
 
     .site-footer-wrap {
@@ -855,11 +861,11 @@ strong {
 /* CSS ALTERNATIVOS */
 
 .bg-fondo-panel-1 {
-    background-color: var(--secondary-color);
+    background-color: #f1f0f0;
 }
 
 .bg-fondo-panel-2 {
-    background-color: var(--primary-color);
+    background-color: #f1f0f0;
 }
 
 .whatsapp-btn {
