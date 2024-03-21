@@ -24,6 +24,11 @@ Free Bootstrap 5 HTML Template
 
 @font-face {
     font-family: LoraItal;
+    src: url(../fonts/Lora-Italic.ttf);
+}
+
+@font-face {
+    font-family: LoraItalBold;
     src: url(../fonts/Lora-BoldItalic.ttf);
 }
 
@@ -38,7 +43,7 @@ Free Bootstrap 5 HTML Template
     --body-font-titulos: GlacialReg;
     --body-font-subtitulos: LoraReg;
     --body-font-italic: LoraItal;
-
+    --body-font-italic-Bold: LoraItalBold;
     --h1-font-size: 60px;
     --h2-font-size: 42px;
     --h3-font-size: 36px;
